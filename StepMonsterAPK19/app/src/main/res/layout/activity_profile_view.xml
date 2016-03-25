@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="finalproject.gv4353jdo589.stepmonster.ProfileView">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Username"
+        android:id="@+id/UNtextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="User Level"
+        android:id="@+id/ULtextView"
+        android:layout_below="@+id/UNtextView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Place picture of User Monster here"
+        android:id="@+id/textView6"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/ULtextView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Total steps:"
+        android:id="@+id/TotalStepstextView"
+        android:layout_above="@+id/StepsTNLtextView"
+        android:layout_toStartOf="@+id/UNtextView"
+        android:layout_marginBottom="21dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Steps to next level:"
+        android:id="@+id/StepsTNLtextView"
+        android:layout_above="@+id/NumWonView"
+        android:layout_alignStart="@+id/TotalStepstextView"
+        android:layout_toStartOf="@+id/ULtextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Challenges won:"
+        android:id="@+id/WontextView"
+        android:layout_alignTop="@+id/NumWonView"
+        android:layout_alignStart="@+id/StepsTNLtextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Challenges lost:"
+        android:id="@+id/LosttextView"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/WontextView"
+        android:layout_alignStart="@+id/WontextView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Monster"
+        android:id="@+id/ChangeMonsterButton"
+        android:layout_above="@+id/LogoutButton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:id="@+id/LogoutButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="32424"
+        android:id="@+id/TotalSteps"
+        android:layout_alignTop="@+id/TotalStepstextView"
+        android:layout_alignEnd="@+id/UNtextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="1232"
+        android:id="@+id/StepsTNL"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/TotalSteps" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="23"
+        android:id="@+id/NumWonView"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/StepsTNL"
+        android:layout_alignStart="@+id/StepsTNL" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="4"
+        android:id="@+id/NumLostView"
+        android:layout_alignTop="@+id/LosttextView"
+        android:layout_alignStart="@+id/NumWonView" />
+
+</RelativeLayout>

@@ -15,6 +15,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Achievements" />
+        <activity android:name=".BattleScreen" />
+        <activity android:name=".ChooseMonster" />
+        <activity android:name=".Login" />
+        <activity android:name=".ProfileView" />
+        <activity android:name=".Register"></activity>
     </application>
 
 </manifest>
